@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Allow USB access · USB Ethernet Fix for TV</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header class="site">
+  <svg viewBox="14 26 92 54" aria-hidden="true"><path d="M22 70A38 38 0 0 1 98 70" fill="none" stroke="#3A3A3A" stroke-width="9" stroke-linecap="round"/><path d="M22 70A38 38 0 0 1 95.7 57" fill="none" stroke="#5CC8FF" stroke-width="9" stroke-linecap="round"/><path d="M60 70L90.1 59.1" stroke="#F2F2F2" stroke-width="5" stroke-linecap="round"/><circle cx="60" cy="70" r="6" fill="#F2F2F2"/></svg>
+  <a href="./">USB Ethernet Fix for TV</a>
+</header>
+
+<h1>Allow USB access</h1>
+<p class="lead">Android asks before any app may use a USB device. The app needs this to drive your adapter.</p>
+
+<h2>The USB prompt</h2>
+<p>When the app starts with the adapter plugged in, the TV shows a prompt asking whether <strong>USB Ethernet Fix for TV</strong> may use the adapter. Press <strong>OK</strong>. Some TVs show a second prompt asking whether to open the app for this device. Press OK there too.</p>
+<p>Android doesn't remember this choice for USB adapters on TVs, so the prompt comes back after every TV restart and sometimes after standby. <a href="auto-connect.html">Auto-connect after restart</a> presses OK for you.</p>
+
+<h2>"Connection permission withdrawn"</h2>
+<p>The app shows this when Android took back its permission to carry the TV's connection. This happens if another VPN app was started, or the permission was turned off in the TV's settings.</p>
+<ol class="steps">
+  <li><strong>Open USB Ethernet Fix for TV.</strong></li>
+  <li><strong>Select Start.</strong> Android asks whether the app may set up the connection.</li>
+  <li><strong>Press OK.</strong> The app connects over the cable again.</li>
+</ol>
+<div class="note">Android shows this as a VPN prompt because a VPN connection is the only way an app may carry a TV's network traffic. The app doesn't send your traffic anywhere else: it goes straight from the TV through the adapter to your router.</div>
+
+<h2>"No USB Ethernet adapter found"</h2>
+<p>Check that the adapter is firmly plugged into the TV's USB port, then select Start. If you use a USB hub, try the adapter directly in the TV. See <a href="adapters.html">Supported adapters</a>.</p>
+
+<footer><a href="./">Back to help</a></footer>
+</main>
+</body>
+</html>

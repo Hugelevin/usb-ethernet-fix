@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auto-connect after restart · USB Ethernet Fix for TV</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header class="site">
+  <svg viewBox="14 26 92 54" aria-hidden="true"><path d="M22 70A38 38 0 0 1 98 70" fill="none" stroke="#3A3A3A" stroke-width="9" stroke-linecap="round"/><path d="M22 70A38 38 0 0 1 95.7 57" fill="none" stroke="#5CC8FF" stroke-width="9" stroke-linecap="round"/><path d="M60 70L90.1 59.1" stroke="#F2F2F2" stroke-width="5" stroke-linecap="round"/><circle cx="60" cy="70" r="6" fill="#F2F2F2"/></svg>
+  <a href="./">USB Ethernet Fix for TV</a>
+</header>
+
+<h1>Auto-connect after restart</h1>
+<p class="lead">After every TV restart, and sometimes after standby, Android asks again for USB access. Auto-connect presses OK on that prompt for you, so the cable connects by itself.</p>
+
+<h2>What it does, and what it doesn't</h2>
+<ul>
+  <li>It only looks at the TV's USB prompts, and only for a short time after the app has asked for USB access.</li>
+  <li>It presses OK on the prompt for this app's adapter. Nothing else.</li>
+  <li>It doesn't read what's on screen in other apps and doesn't collect or send anything.</li>
+</ul>
+<p>Android lists it as an accessibility service, because that's the only way an app may press a button on a system prompt. You'll see it as <strong>USB Ethernet Fix: auto-connect after restart</strong>.</p>
+
+<h2>Turn it on</h2>
+<ol class="steps">
+  <li><strong>In the app, open Settings and select Auto-connect after restart.</strong> The TV's accessibility settings open.</li>
+  <li><strong>Select USB Ethernet Fix: auto-connect after restart</strong> and turn it on.</li>
+  <li><strong>Confirm with OK</strong>, then press Back to return to the app. Settings shows <strong>On</strong>.</li>
+</ol>
+
+<h2>Turn it off</h2>
+<p>Same place: Settings, Auto-connect after restart, then turn it off in the TV's accessibility settings. The app keeps working. You'll just need to press OK on the USB prompt yourself after each restart.</p>
+
+<footer><a href="./">Back to help</a></footer>
+</main>
+</body>
+</html>

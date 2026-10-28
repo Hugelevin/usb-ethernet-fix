@@ -1,0 +1,29 @@
+name: Problem report
+description: Something isn't working in USB Ethernet Fix for TV. The app can fill in most of this for you.
+title: "Problem: "
+labels: ["problem"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. If you scanned the QR code in the app (Settings, About & Support), the diagnostics below are already filled in. They contain no personal data.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you were doing, what you expected, and what happened instead.
+      placeholder: For example, after the TV woke from standby the app said "Waiting for the adapter" and never connected.
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics
+      description: Filled in by the app. Please leave it as it is.
+      render: text
+  - type: input
+    id: device
+    attributes:
+      label: TV and adapter
+      description: Filled in by the app, or type them yourself.
+      placeholder: Philips OLED819 · TP-Link UE300

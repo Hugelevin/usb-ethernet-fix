@@ -16,15 +16,15 @@
 <h1>Supported adapters</h1>
 <p class="lead">The app has two connection modes. You choose one in <strong>Settings</strong>.</p>
 <ul>
-  <li><strong>Full speed</strong>: talks to the adapter's Realtek chip directly. The fastest mode, for Realtek adapters only.</li>
+  <li><strong>Full Speed</strong>: talks to the adapter's Realtek chip directly. The fastest mode, for Realtek adapters only.</li>
   <li><strong>Compatible</strong>: uses the standard USB Ethernet mode that most adapters have. Works more widely, a bit slower.</li>
 </ul>
-<p>If you choose Full speed and the adapter can't use it, the app switches to Compatible by itself and tells you in Settings.</p>
+<p>Full Speed is the default. If the adapter can't use it, the app switches to Compatible by itself and tells you in Settings.</p>
 
 <h2>Tested</h2>
 <div class="table-wrap">
 <table>
-  <tr><th>Adapter</th><th>Chip</th><th>Full speed</th><th>Compatible</th><th>Measured</th></tr>
+  <tr><th>Adapter</th><th>Chip</th><th>Full Speed</th><th>Compatible</th><th>Measured</th></tr>
   <tr><td>TP-Link UE300</td><td>Realtek RTL8153</td><td><span class="tag ok">Works</span></td><td><span class="tag ok">Works</span></td><td>About 550 to 800 Mbps (several downloads at once)</td></tr>
 </table>
 </div>
@@ -34,7 +34,7 @@
 <div class="table-wrap">
 <table>
   <tr><th>Adapter type</th><th>Mode</th><th>Status</th></tr>
-  <tr><td>Other gigabit adapters with a Realtek RTL8153 chip</td><td>Full speed if the chip revision matches, otherwise Compatible</td><td><span class="tag maybe">Not tested yet</span></td></tr>
+  <tr><td>Other gigabit adapters with a Realtek RTL8153 chip</td><td>Full Speed if the chip revision matches, otherwise Compatible</td><td><span class="tag maybe">Not tested yet</span></td></tr>
   <tr><td>Adapters that offer the standard USB Ethernet mode (CDC-ECM)</td><td>Compatible</td><td><span class="tag maybe">Not tested yet</span></td></tr>
 </table>
 </div>

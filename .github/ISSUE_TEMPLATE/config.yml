@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Help pages
+    url: https://hugelevin.github.io/usb-ethernet-fix/
+    about: Install steps, supported adapters and troubleshooting. Most questions are answered here.

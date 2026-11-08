@@ -42,6 +42,9 @@
   <li>One single download is often limited to about 200 Mbps by Android while Wi-Fi is connected. Apps that use several connections (most streaming apps) get more.</li>
 </ul>
 
+<h2 id="other-speed-tests">Another speed test app shows a lower speed</h2>
+<p>That's normal. Many speed test apps for TVs test against one server, often far away, with only one or two connections, so they rarely get past 100 Mbps on a TV. The app's own test downloads from several nearby servers at once, which is closer to what streaming apps do. If the app's test shows a good speed, the wired connection is working.</p>
+
 <h2 id="usb2">"The adapter is at USB 2 speed"</h2>
 <p>USB 3 lets the wired connection reach about 900 Mbps. At USB 2 it tops out around 300 Mbps. Adapters sometimes drop to USB 2 on their own.</p>
 <ul>
@@ -54,12 +57,12 @@
 <p>Turn on <a href="auto-connect.html">Auto-connect</a>. Without it, the app waits until someone presses OK on the USB prompt.</p>
 
 <h2 id="dns">DNS</h2>
-<p>In Settings you can choose which DNS servers the TV uses while it's wired: your router's (the default), Cloudflare (1.1.1.1), or your own, for example a Pi-hole. On Wi-Fi the TV uses the Wi-Fi network's DNS as usual. Changing it reconnects the cable for a few seconds.</p>
+<p>In Settings you can choose which DNS servers the TV uses while it's wired: your router's (the default), Cloudflare (1.1.1.1), or your own, for example a Pi-hole. On Wi-Fi the TV uses the Wi-Fi network's DNS as usual. Changing it drops the wired connection for a few seconds.</p>
 
 <h2 id="report">Reporting a problem</h2>
 <ol class="steps">
   <li><strong>In the app, open Settings, then About &amp; Support.</strong></li>
-  <li><strong>Scan the "Report a problem" QR code with your phone.</strong> It opens a GitHub problem report with the app version, TV, adapter, mode and the last error already filled in. Nothing personal is included.</li>
+  <li><strong>Scan the "Report a Problem" QR code with your phone.</strong> It opens a GitHub problem report with the app version, TV, adapter (including its USB details), mode and the last error already filled in. No IP or MAC addresses, nothing personal.</li>
   <li><strong>Add a line about what happened, then submit it.</strong> Or just close it if you change your mind. You need a GitHub account to submit.</li>
 </ol>
 <p>No QR code to hand? <a href="https://github.com/Hugelevin/usb-ethernet-fix/issues/new?template=problem.yml">Open a problem report</a> and fill it in yourself.</p>

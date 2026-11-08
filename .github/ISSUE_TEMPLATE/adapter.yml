@@ -1,0 +1,47 @@
+name: Adapter report
+description: Tell us how a USB Ethernet adapter worked with USB Ethernet Fix, whether it worked or not.
+title: "Adapter: "
+labels: ["adapter"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks. Reports like this decide which adapters get added next. If the adapter didn't work, the Report a Problem QR code in the app (Settings, About & Support) also sends its USB details, which is what we need to add it.
+  - type: input
+    id: adapter
+    attributes:
+      label: Adapter
+      description: Brand and model, as printed on it or on the box.
+      placeholder: TP-Link UE300
+    validations:
+      required: true
+  - type: input
+    id: tv
+    attributes:
+      label: TV
+      description: Brand, model and Android TV version (Settings, About).
+      placeholder: Philips OLED819 · Android TV 14
+    validations:
+      required: true
+  - type: dropdown
+    id: result
+    attributes:
+      label: Did it work?
+      options:
+        - Works in Full Speed
+        - Works in Compatible only
+        - Connects but is slow or drops out
+        - Doesn't work ("No USB Ethernet adapter found" or similar)
+    validations:
+      required: true
+  - type: input
+    id: speed
+    attributes:
+      label: Speed
+      description: The cable result of the app's Speed Test, if it connected.
+      placeholder: 900 Mbps
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: USB port used (USB 2 or 3), a hub in between, or what the app showed.

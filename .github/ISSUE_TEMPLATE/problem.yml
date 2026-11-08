@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for reporting. If you scanned the QR code in the app (Settings, About & Support), the diagnostics below are already filled in. They contain no personal data.
+        Thanks for reporting. If you scanned the QR code in the app (Settings, About & Support), the diagnostics below are already filled in, including the adapter's USB details. They contain no IP or MAC addresses and nothing personal. Before reporting, the [troubleshooting page](https://hugelevin.github.io/usb-ethernet-fix/troubleshooting.html) may already have the answer.
   - type: textarea
     id: what
     attributes:

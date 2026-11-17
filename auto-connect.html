@@ -31,6 +31,17 @@
   <li><strong>Confirm with OK</strong>, then press Back to return to the app. Settings shows <strong>On</strong>.</li>
 </ol>
 
+<h2 id="restricted">"Restricted setting" or you can't turn it on</h2>
+<p>Android 13 and newer lock accessibility for apps installed from a downloaded file, which is how Downloader installs it. You'll see USB Ethernet Fix greyed out, or a message about a restricted setting. To unlock it:</p>
+<ol class="steps">
+  <li><strong>Try to turn it on once</strong> (step 2 above), so Android notes that you tried.</li>
+  <li><strong>Open the TV's Settings, then Apps, then USB Ethernet Fix.</strong> If there's an <strong>Allow restricted settings</strong> option (sometimes under a ⋮ menu), select it and confirm.</li>
+  <li><strong>Go back to step 1 above</strong> and turn Auto-connect on.</li>
+</ol>
+<p>Many TVs don't show that option. Then one command from a computer unlocks it, with USB debugging switched on in the TV's Developer options:</p>
+<p><code>adb connect &lt;TV address&gt;</code><br><code>adb shell appops set tv.usbethernetfix ACCESS_RESTRICTED_SETTINGS allow</code></p>
+<p>It only unlocks this app's accessibility switch, and you still turn it on yourself. Installing the app over ADB (<code>adb install</code>) avoids the lock altogether.</p>
+
 <h2>Turn it off</h2>
 <p>Same place: Settings, Auto-connect, then turn it off in the TV's accessibility settings. The app keeps working. You'll just need to press OK on the USB prompt yourself after each restart.</p>
 

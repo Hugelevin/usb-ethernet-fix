@@ -38,7 +38,7 @@
   <li><strong>Open the TV's Settings, then Apps, then USB Ethernet Fix.</strong> If there's an <strong>Allow restricted settings</strong> option (sometimes under a ⋮ menu), select it and confirm.</li>
   <li><strong>Go back to step 1 above</strong> and turn Auto-connect on.</li>
 </ol>
-<p>Many TVs don't show that option. Then one command from a computer unlocks it, with USB debugging switched on in the TV's Developer options:</p>
+<p>Many TVs don't show that option, or show it for a moment and close it again. Then one command unlocks it, sent from a computer or from an Android phone with an ADB app such as Remote ADB Shell. On the TV, first switch on Developer options (Settings, System, About, then press Build seven times) and, in them, USB debugging:</p>
 <p><code>adb connect &lt;TV address&gt;</code><br><code>adb shell appops set tv.usbethernetfix ACCESS_RESTRICTED_SETTINGS allow</code></p>
 <p>It only unlocks this app's accessibility switch, and you still turn it on yourself. Installing the app over ADB (<code>adb install</code>) avoids the lock altogether.</p>
 
